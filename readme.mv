@@ -6,15 +6,28 @@ Utiliza Django para el backend (API REST) y React para el frontend.
 
 Instalación y Configuración
 Backend (Django):
-Clona este repositorio.
-Crea un entorno virtual y actívalo.
-Instala las dependencias con pip install -r requirements.txt.
-Ejecuta las migraciones con python manage.py migrate.
-Inicia el servidor con python manage.py runserver.
+Clona este repositorio:
+git clone https://github.com/EverDuvan/CRUD_Django_React.git
+
+Crea un entorno virtual y actívalo:
+python -m venv env (windows)     python3 -m venv env (linux)
+env\Scripts\activate(windows)    source env/bin/activate (linux)
+
+Instala las dependencias:
+pip install -r requirements.txt
+
+Ejecuta las migraciones:
+python manage.py migrate
+Inicia el servidor:
+python manage.py runserver.
+
 Frontend (React):
 Ve al directorio frontend.
-Instala las dependencias con npm install.
-Inicia la aplicación con npm start.
+Instala las dependencias: 
+npm install
+Inicia la aplicación:
+npm start
+
 Estructura del Proyecto
 backend/
 settings.py: Configuración de la aplicación Django.
@@ -24,9 +37,13 @@ frontend/src/
 components/: Componentes React (Lista de tutoriales, formulario de creación, etc.).
 services/api.js: Configuración de Axios para las solicitudes HTTP.
 App.js: Configuración de rutas con React Router.
+
 Ejecución del Proyecto
-Inicia el servidor Django: python manage.py runserver.
-Inicia la aplicación React: npm start.
+Inicia el servidor Django: 
+python manage.py runserver.
+Inicia la aplicación React: 
+npm start.
+
 Contribución y Licencia
 Si deseas contribuir, crea una rama y envía una solicitud de extracción.
 
