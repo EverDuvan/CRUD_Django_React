@@ -2,6 +2,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from api.models import Blog
 from api.serializers import BlogSerializer
+from django.shortcuts import render
 
 @api_view(['GET'])
 def getBlogs(request):
@@ -34,3 +35,7 @@ def deleteBlog(request, pk):
     blog = Blog.objects.get(id=pk)
     blog.delete()
     return Response('Blog deleted')
+
+
+def index(request):
+    return render(request, 'index.html')
