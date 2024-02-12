@@ -36,6 +36,5 @@ def deleteBlog(request, pk):
     blog.delete()
     return Response('Blog deleted')
 
-
 def index(request):
     return render(request, 'index.html')
