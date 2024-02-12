@@ -3,15 +3,17 @@ import React from "react";
 // Components
 import Header from "./components/Header";
 import BlogForm from "./components/BlogForm";
+import Blogs from "./components/Blogs";
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
-      <div className="container">
+      <div className="container p-4">
         <BlogForm />
+        <Blogs />
       </div>
-    </div>
+    </>
   );
 }
 

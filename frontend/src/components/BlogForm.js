@@ -1,9 +1,9 @@
-import React, {useState} from "react";
+//import React, {useState} from "react";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import ImputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
-import axios from "axios";
+//import axios from "axios";
 
 export default function BlogForm() {
     return(
