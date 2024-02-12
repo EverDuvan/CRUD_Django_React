@@ -7,7 +7,13 @@
 </head>
 <body>
     <h1>CRUD Django React</h1>
-    <p> get - post - put - delete </p>
+    <p>Selecciona una acción:</p>
+    <ul>
+        <li><a href="{% url 'getBlogs' %}">Ver logs</a></li>
+        <li><a href="{% url 'postBlog' %}">Publicar un log</a></li>
+        <li><a href="{% url 'putBlog' pk=1 %}">Editar un log</a></li>
+        <li><a href="{% url 'deleteBlog' pk=1 %}">Eliminar un log</a></li>
+    </ul>
     <!-- Puedes agregar más contenido aquí según tus necesidades -->
 </body>
 </html>
